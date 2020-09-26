@@ -160,6 +160,10 @@ header h3 {
     padding: 2rem;
 }
 
+.header-edit {
+    background: #dabf85;
+}
+
 .modal-body {
     padding: 2rem;
 }
@@ -177,4 +181,8 @@ input {
     color: #fff;
     width: 9rem;
     font-size: 1rem;
+}
+
+.edit-btn-modal{
+    background: var(--btn-color);
 }
