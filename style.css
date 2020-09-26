@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: rgb(35, 184, 67);
+    --secondary-color: rgb(152, 206, 219);
+    --btn-color: rgb(238, 159, 55);
+    --delete-btn: rgb(238, 55, 55);
+}
+
+.container {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding-bottom: 1.7rem;
+    -webkit-box-shadow: 5px 5px 17px -6px rgba(0,0,0,0.67);
+    -moz-box-shadow: 5px 5px 17px -6px rgba(0,0,0,0.67);
+    box-shadow: 5px 5px 17px -6px rgba(0,0,0,0.67);
+}
+
+header {
+    width: 100%;
+    background: var(--main-color);
+    padding: 1rem;
+    color: #fff;
+}
+
+header h3 {
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+.table-users {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+}
+
+.table-users th, .table-users td {
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+.table-users th {
+    background: #fafafa;
+    padding: 1rem auto;
+}
+
+/*Button styling*/
+
+.btn {
+    background: transparent;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn-edit {
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+}
+
+.btn-edit:hover {
+    color: #fff;
+    border: 1px solid var(--btn-color);
+    background: var(--btn-color);
+}
+
+.btn-delete {
+    color: var(--delete-btn);
+    border: 1px solid var(--delete-btn);
+}
+
+.btn-delete:hover {
+    color: #fff;
+    border: 1px solid var(--delete-btn);
+    background: var(--delete-btn);
+}
+
+.btn-add {
+    width: 8rem;
+    height: 2rem;
+    background: #fff;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-size: 1rem;
+}
+
+.btn-add:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+/*Button styling END*/
+
+
+.table-wrapper {
+    text-align: center;
+}
+
+
+
+/*Modal Styling*/
+
+.modal-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.377);
+    display: none;
+}
+
+.modal-show {
+    display: block;
+}
+
+.modal {
+    position: relative;
+    background: #fff;
+    text-align: center;
+    width: 25rem;
+    margin: 5rem auto;
+    -webkit-box-shadow: 5px 5px 17px -6px rgba(0,0,0,0.67);
+    -moz-box-shadow: 5px 5px 17px -6px rgba(0,0,0,0.67);
+    box-shadow: 5px 5px 17px -6px rgba(0,0,0,0.67);
+    animation-name: animatetop;
+    animation-duration: 0.7s;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    margin-bottom: 1rem;
+    background: #8fda85;
+    padding: 2rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+input {
+    width: 100%;
+    height: 2.2rem;
+    margin-bottom: 1rem;
+    text-indent: 0.5rem;
+    outline: none;
+}
+
+.btn-modal {
+    background: var(--main-color);
+    color: #fff;
+    width: 9rem;
+    font-size: 1rem;
+}
