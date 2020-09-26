@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 50rem;
+    max-width: 60rem;
     margin: 2rem auto;
     padding-bottom: 1.7rem;
     -webkit-box-shadow: 5px 5px 17px -6px rgba(0,0,0,0.67);
@@ -31,6 +31,7 @@ header {
     background: var(--main-color);
     padding: 1rem;
     color: #fff;
+    font-size: 1.4rem;
 }
 
 header h3 {
@@ -39,7 +40,7 @@ header h3 {
 }
 
 .table-users {
-    width: 90%;
+    width: 95%;
     margin: 2rem auto;
     border-collapse: collapse;
 }

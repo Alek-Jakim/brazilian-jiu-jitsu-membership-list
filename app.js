@@ -65,6 +65,7 @@ window.addEventListener('click', e => {
     if (e.target === editModal) {
         editModal.classList.remove('modal-show')
     }
+
 });
 
 
@@ -78,6 +79,12 @@ db.collection('members').onSnapshot(snapshot => {
 
             let tbody = tr.parentElement;
             tableUsers.removeChild(tbody);
+        }
+        if (change.type === 'modified') {
+            let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+            let tbody = tr.parentElement;
+            tableUsers.removeChild(tbody);
+            renderUser(change.doc);
         }
     });
 })
